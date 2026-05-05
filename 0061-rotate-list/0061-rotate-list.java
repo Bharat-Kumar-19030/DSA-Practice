@@ -25,6 +25,7 @@ class Solution {
             temp2=temp2.next;
         }
         ListNode ret=temp2.next;
+        if(ret==null)return head;
         temp2.next=null;
         temp.next=head;
         return ret;
